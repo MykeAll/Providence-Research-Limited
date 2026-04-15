@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Case Studies — Providence Research</title>
+    <meta name="description" content="Case studies showing outcomes and technologies used." />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Toggle button for mobile -->
+            <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+
+            <a class="brand" href="home.html">
+                <div class="logo">PR</div>
+                <div class="brand-text"><strong>Providence Research</strong><span>Process Automation • Software
+                        Development</span></div>
+            </a>
+            <nav class="main-nav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="process.html">Process</a>
+                <a href="cases.html" class="active">Case Studies</a>
+                <a href="contact.html" class="cta">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Case Studies</h1>
+
+        <article class="case panel">
+            <h2>Finance reconciliation automation</h2>
+            <p class="muted">Challenge: manual reconciliation across three legacy systems causing long close cycles.</p>
+            <p>Solution: end‑to‑end automation using RPA for data extraction, API adapters for system sync, and a
+                reconciliation engine with alerts.</p>
+            <ul class="muted">
+                <li>Outcome: monthly close reduced from 7 days to 24 hours</li>
+                <li>Technologies: RPA, Python, SQL, API gateway</li>
+            </ul>
+        </article>
+        <br>
+
+        <article class="case panel">
+            <h2>Customer onboarding platform</h2>
+            <p class="muted">Challenge: high drop‑off during identity verification and document processing.</p>
+            <p>Solution: cloud native onboarding service with OCR, automated checks, and human review queue.</p>
+            <ul class="muted">
+                <li>Outcome: conversion improved by 18%</li>
+                <li>Technologies: Node.js, React, Kubernetes, OCR</li>
+            </ul>
+        </article>
+    </main>x
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div><strong>Providence Research</strong></div>
+            <div class="muted">© <span id="year"></span> Providence Research</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

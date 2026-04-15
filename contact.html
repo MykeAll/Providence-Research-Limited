@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Providence Research</title>
+  <meta name="description" content="Contact Providence Research for consultations and partnerships." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+        <!-- Toggle button for mobile -->
+        <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
+            <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+      <a class="brand" href="home.html"><div class="logo">PR</div><div class="brand-text"><strong>Providence Research</strong><span>Process Automation • Software Development</span></div></a>
+      <nav class="main-nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="cases.html">Case Studies</a>
+        <a href="contact.html" class="active cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Providence Research</h1>
+    <p class="muted">Ready to reduce manual work and ship reliable software? Tell us about your project.</p>
+
+    <div class="grid-2">
+      <section class="panel">
+        <form id="contactForm" onsubmit="handleContactForm(event)">
+          <input id="name" placeholder="Full name" required>
+          <input id="email" type="email" placeholder="Email address" required>
+          <input id="company" placeholder="Company (optional)">
+          <select id="service">
+            <option value="automation">Process automation</option>
+            <option value="software">Software development</option>
+            <option value="integration">Integration & APIs</option>
+            <option value="other">Other</option>
+          </select>
+          <textarea id="message" placeholder="Brief description of your challenge" required></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send message</button>
+            <a class="btn ghost" href="services.html">Learn more</a>
+          </div>
+        </form>
+      </section>
+
+      <aside class="panel contact-details">
+        <h3>Office</h3>
+        <p class="muted">Providence Research — Headquarters</p>
+        <div class="muted">
+          <div><strong>Email</strong> hello@providenceresearch.example</div>
+          <div style="margin-top:8px"><strong>Phone</strong> +1 (555) 123‑4567</div>
+          <div style="margin-top:8px"><strong>Location</strong> Remote-first; offices by appointment</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Providence Research</strong></div>
+      <div class="muted">© <span id="year"></span> Providence Research</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
